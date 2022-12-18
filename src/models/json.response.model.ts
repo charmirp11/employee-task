@@ -1,13 +1,13 @@
-import ErrorResponse from "./error.response.model";
+import ErrorResponse from './error.response.model';
 export default class JsonResponse {
   public statusCode: number;
   public error?: ErrorResponse | null;
-  public employees: []
+  public employees: [];
 
   constructor(
     statusCode: number,
     error: ErrorResponse|null,
-    employees: []
+    employees: [],
   ) {
     this.statusCode = statusCode;
     this.error = error;

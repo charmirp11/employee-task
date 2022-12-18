@@ -31,7 +31,7 @@ export default class DBProvider {
 
   public static async destroy() {
     if (DBProvider.con) {
-        await DBProvider.mongoServer.stop();
+      await DBProvider.mongoServer.stop();
       await DBProvider.con.close();
     }
   }

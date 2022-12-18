@@ -1,11 +1,11 @@
 import bodyParser from 'body-parser';
-import dotenv from 'dotenv';
 import compression from 'compression';
-import helmet from 'helmet';
+import dotenv from 'dotenv';
 import Express from 'express';
+import helmet from 'helmet';
+import errorHandler from './middlewares/error.handler.middleware';
 import routes from './routes';
 import { generateToken } from './utils/jwt.utils';
-import errorHandler from './middlewares/error.handler.middleware';
 dotenv.config();
 const PORT = process.env.PORT;
 const app: Express.Application = Express();

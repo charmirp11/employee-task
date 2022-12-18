@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import employeeService from '../services/employee.service';
 import JsonResponse from '../models/json.response.model';
+import employeeService from '../services/employee.service';
 class EmployeeContoller {
   public async addEmployees(req: Request, res: Response, next: NextFunction) {
     try {
